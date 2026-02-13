@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-sass-custom",
+  "version": "1.0.0",
+  "description": "Proyecto Bootstrap con personalización SASS",
+  "scripts": {
+    "sass:build": "sass scss/main.scss css/main.css --style=expanded",
+    "sass:watch": "sass scss/main.scss css/main.css --watch --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.71.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
