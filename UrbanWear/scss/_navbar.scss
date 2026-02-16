@@ -1,0 +1,127 @@
+// ==============================================
+// FICHERO _navbar.scss
+// Estilos personalizados para la navbar y dropdown
+// ==============================================
+
+.navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .navbar-brand {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 1.6rem;
+        color: #1a1a2e !important;
+        letter-spacing: -0.03em;
+        transition: color 0.3s ease;
+
+        i {
+            color: #e94560;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            color: #e94560 !important;
+
+            i {
+                transform: scale(1.15);
+            }
+        }
+    }
+
+    // Enlaces del menú
+    .nav-link {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 0.5rem 1rem !important;
+        margin: 0 0.15rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        position: relative;
+        color: #2d3436 !important;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #e94560;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        &:hover {
+            color: #e94560 !important;
+            background-color: rgba(233, 69, 96, 0.05);
+
+            &::after {
+                width: 60%;
+            }
+        }
+
+        &.active {
+            color: #e94560 !important;
+            font-weight: 700;
+            background-color: rgba(233, 69, 96, 0.08);
+
+            &::after {
+                width: 60%;
+            }
+        }
+    }
+
+    // Dropdown menus
+    .dropdown-menu {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+        padding: 0.75rem 0;
+        animation: fadeInDown 0.3s ease;
+        overflow: hidden;
+
+        .dropdown-item {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+            padding: 0.6rem 1.25rem;
+            transition: all 0.25s ease;
+            border-radius: 0;
+
+            &:hover {
+                background-color: rgba(233, 69, 96, 0.08);
+                color: #e94560;
+                padding-left: 1.5rem;
+            }
+
+            &.active,
+            &:active {
+                background-color: #e94560;
+                color: #fff;
+            }
+        }
+
+        .dropdown-divider {
+            border-color: rgba(0, 0, 0, 0.06);
+        }
+    }
+}
+
+// Animación dropdown
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

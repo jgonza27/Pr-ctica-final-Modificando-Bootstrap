@@ -1,0 +1,16 @@
+{
+  "name": "urbanwear-sass",
+  "version": "1.0.0",
+  "description": "UrbanWear - Moda Urbana con Bootstrap SASS personalizado",
+  "scripts": {
+    "sass": "sass scss/styles.scss css/styles.css --watch",
+    "sass:build": "sass scss/styles.scss css/styles.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1"
+  }
+}

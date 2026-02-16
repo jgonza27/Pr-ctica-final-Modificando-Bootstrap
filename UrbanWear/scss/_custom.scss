@@ -1,0 +1,282 @@
+// ==============================================
+// FICHERO _custom.scss
+// Estilos adicionales y componentes específicos
+// ==============================================
+
+// ------ BOTONES PERSONALIZADOS ------
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #e94560 0%, #c0392b 100%);
+    border: none;
+    color: #ffffff;
+
+    &:hover {
+        background: linear-gradient(135deg, #c0392b 0%, #e94560 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(233, 69, 96, 0.35);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 8px rgba(233, 69, 96, 0.25);
+    }
+}
+
+.btn-outline-primary {
+    color: #e94560;
+    border: 2px solid #e94560;
+    background: transparent;
+
+    &:hover {
+        background-color: #e94560;
+        border-color: #e94560;
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(233, 69, 96, 0.25);
+    }
+}
+
+.btn-secondary {
+    background-color: #636e72;
+    border: none;
+
+    &:hover {
+        background-color: #2d3436;
+        transform: translateY(-2px);
+    }
+}
+
+.btn-light {
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    color: #1a1a2e;
+    font-weight: 700;
+
+    &:hover {
+        background-color: #f8f9fa;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #f5a623 0%, #e67e22 100%);
+    border: none;
+    color: #1a1a2e;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(245, 166, 35, 0.35);
+    }
+}
+
+// ------ HERO / CAROUSEL ------
+.hero-slide {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &.bg-primary {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+    }
+
+    &.bg-secondary {
+        background: linear-gradient(135deg, #2d3436 0%, #636e72 100%) !important;
+    }
+
+    &.bg-dark {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%) !important;
+    }
+}
+
+.carousel-indicators {
+    [data-bs-target] {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        background-color: transparent;
+        transition: all 0.3s ease;
+
+        &.active {
+            background-color: #e94560;
+            border-color: #e94560;
+            transform: scale(1.2);
+        }
+    }
+}
+
+// ------ FOOTER ------
+footer {
+    background: linear-gradient(180deg, #1a1a2e 0%, #0a0a0a 100%) !important;
+
+    h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #ffffff !important;
+        margin-bottom: 1rem;
+
+        &::after {
+            display: none; // quitar la línea decorativa de h2 en el footer
+        }
+    }
+
+    a {
+        transition: all 0.3s ease;
+
+        &.text-white-50 {
+            &:hover {
+                color: #e94560 !important;
+                padding-left: 5px;
+            }
+        }
+
+        &.text-white {
+            &:hover {
+                color: #e94560 !important;
+                transform: scale(1.15);
+            }
+        }
+    }
+}
+
+// ------ PAGINATION ------
+.pagination {
+    .page-link {
+        border-radius: 8px !important;
+        margin: 0 3px;
+        border: none;
+        color: #636e72;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: rgba(233, 69, 96, 0.1);
+            color: #e94560;
+        }
+    }
+
+    .page-item.active .page-link {
+        background-color: #e94560;
+        border-color: #e94560;
+        color: #ffffff;
+    }
+}
+
+// ------ BREADCRUMB ------
+.breadcrumb {
+    font-size: 0.875rem;
+
+    a {
+        color: #e94560;
+        font-weight: 500;
+
+        &:hover {
+            color: #c0392b;
+        }
+    }
+}
+
+// ------ ACCORDION ------
+.accordion-item {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px !important;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.accordion-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    padding: 1rem 1.25rem;
+
+    &:not(.collapsed) {
+        background-color: rgba(233, 69, 96, 0.05);
+        color: #e94560;
+        box-shadow: none;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(233, 69, 96, 0.15);
+        border-color: rgba(233, 69, 96, 0.3);
+    }
+
+    &::after {
+        transition: transform 0.3s ease;
+    }
+}
+
+// ------ BADGE ------
+.badge {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.badge.bg-danger {
+    background: linear-gradient(135deg, #e94560 0%, #d63031 100%) !important;
+}
+
+// ------ IMG THUMBNAIL ------
+.img-thumbnail {
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        border-color: #e94560;
+        opacity: 0.85;
+        transform: scale(1.03);
+    }
+}
+
+// ------ TABLE ------
+.table {
+    th {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #1a1a2e;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+    }
+}
+
+// ------ LOADING STATE ------
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+// ------ RESPONSIVE ------
+@media (max-width: 768px) {
+    .card .card-img-top {
+        height: 200px;
+    }
+
+    .hero-slide {
+        min-height: 350px !important;
+    }
+
+    .display-4 {
+        font-size: 1.75rem;
+    }
+
+    h2::after {
+        display: none;
+    }
+}

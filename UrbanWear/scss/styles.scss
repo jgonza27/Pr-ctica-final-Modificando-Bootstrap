@@ -1,0 +1,20 @@
+// ==============================================
+// FICHERO PRINCIPAL styles.scss
+// Importa las variables ANTES de Bootstrap
+// y los parciales personalizados DESPUÉS
+// ==============================================
+
+// 1. Variables personalizadas (ANTES de Bootstrap)
+@import 'variables';
+
+// 2. Bootstrap completo
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// 3. Estilos personalizados (DESPUÉS de Bootstrap, para sobrescribir)
+@import 'reboot';
+@import 'navbar';
+@import 'forms';
+@import 'modals';
+@import 'alerts';
+@import 'cards';
+@import 'custom';
