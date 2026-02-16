@@ -1,15 +1,8 @@
-// ==============================================
-// FICHERO _reboot.scss
-// Estilos base globales y resets personalizados
-// ==============================================
-
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.7;
 }
-
-// Cabeceras: fuente Montserrat con estilo urbano
 h1,
 h2,
 h3,
@@ -21,16 +14,13 @@ h6 {
     letter-spacing: -0.02em;
     color: #1a1a2e;
 }
-
 h1 {
     font-size: 2.5rem;
 }
-
 h2 {
     font-size: 2rem;
     position: relative;
     padding-bottom: 0.5rem;
-
     &::after {
         content: '';
         position: absolute;
@@ -42,48 +32,36 @@ h2 {
         border-radius: 2px;
     }
 }
-
 h3 {
     font-size: 1.5rem;
 }
-
 p {
     color: #636e72;
     line-height: 1.8;
 }
-
 a {
     transition: color 0.3s ease, opacity 0.3s ease;
     text-decoration: none;
-
     &:hover {
         color: #e94560;
     }
 }
-
 img {
     transition: transform 0.4s ease, opacity 0.3s ease;
 }
-
-// Scrollbar personalizado
 ::-webkit-scrollbar {
     width: 8px;
 }
-
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #b2bec3;
     border-radius: 4px;
-
     &:hover {
         background: #636e72;
     }
 }
-
-// Selección de texto
 ::selection {
     background-color: rgba(233, 69, 96, 0.2);
     color: #1a1a2e;
