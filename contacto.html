@@ -11,13 +11,27 @@
 
 <body>
 
-    
+
     <nav class="navbar navbar-expand-lg mb-5">
         <div class="container">
             <a class="navbar-brand" href="index.html"><i class="bi bi-heptagon-fill me-2"></i>UrbanWear</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="catalogo.html">Hombres</a></li>
+                            <li><a class="dropdown-item" href="catalogo.html">Mujeres</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="catalogo.html">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="catalogo.html">Ofertas</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
@@ -52,7 +66,7 @@
 
                             <button type="submit" class="btn btn-primary w-100 mb-3">Enviar Mensaje</button>
 
-                            
+
                             <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
                                 <h6 class="alert-heading"><i class="bi bi-check-circle-fill me-2"></i>¡Mensaje enviado!
                                 </h6>
@@ -84,8 +98,8 @@
         </div>
     </div>
 
-    
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
