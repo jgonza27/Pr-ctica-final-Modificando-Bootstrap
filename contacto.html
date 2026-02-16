@@ -12,12 +12,20 @@
 <body>
 
 
-    <nav class="navbar navbar-expand-lg mb-5">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class="bi bi-heptagon-fill me-2"></i>UrbanWear</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-heptagon-fill me-2"></i>UrbanWear
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             Categorías
@@ -32,8 +40,20 @@
                             <li><a class="dropdown-item" href="catalogo.html">Ofertas</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
+                <div class="d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm">Login</a>
+                    <a href="registro.html" class="btn btn-primary btn-sm">Registro</a>
+                    <a href="carrito.html" class="btn btn-light position-relative">
+                        <i class="bi bi-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            2
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -67,26 +87,26 @@
                             <button type="submit" class="btn btn-primary w-100 mb-3">Enviar Mensaje</button>
 
 
-                            <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                            <div class="alert alert-success alert-dismissible fade d-none mt-3" role="alert">
                                 <h6 class="alert-heading"><i class="bi bi-check-circle-fill me-2"></i>¡Mensaje enviado!
                                 </h6>
                                 Tu mensaje ha sido enviado correctamente. Te responderemos pronto.
                                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                             </div>
 
-                            <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+                            <div class="alert alert-danger alert-dismissible fade d-none mt-3" role="alert">
                                 <h6 class="alert-heading"><i class="bi bi-exclamation-triangle-fill me-2"></i>Error</h6>
                                 Hubo un problema al enviar tu mensaje. Inténtalo de nuevo.
                                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                             </div>
 
-                            <div class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
+                            <div class="alert alert-warning alert-dismissible fade d-none mt-3" role="alert">
                                 <h6 class="alert-heading"><i class="bi bi-info-circle-fill me-2"></i>Aviso</h6>
                                 Nuestro horario de atención es de Lunes a Viernes, 9:00 - 18:00.
                                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                             </div>
 
-                            <div class="alert alert-info alert-dismissible fade show mt-3" role="alert">
+                            <div class="alert alert-info alert-dismissible fade d-none mt-3" role="alert">
                                 <h6 class="alert-heading"><i class="bi bi-star-fill me-2"></i>Novedad</h6>
                                 ¡Ahora puedes contactarnos también por WhatsApp!
                                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
